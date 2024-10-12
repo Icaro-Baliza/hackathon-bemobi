@@ -1,0 +1,4 @@
+enum genero {
+    masculino,
+    feminino,
+}
