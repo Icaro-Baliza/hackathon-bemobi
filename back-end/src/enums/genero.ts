@@ -1,4 +1,4 @@
-enum genero {
-    masculino,
-    feminino,
+export enum genero {
+    masculino = "masculino",
+    feminino = "feminino",
 }

@@ -1,17 +1,20 @@
-
+import { Request, Response } from 'express'
+import Pagamentos from '../entities/Pagamentos';
+import Cliente from '../entities/Cliente';
+import Notificacoes from '../entities/Notificacoes';
 
 class DadosController {
-    static async receberDados(req: express.Request, res: express.Response) {
+    static async receberDados(req: Request, res: Response) {
         try {
             const { id, genero, idade, estado, pagamentos, dataCancelamento, telefoneCliente, statusConversao } = req.body;
 
-            // Criação do objeto Pagamentos
+           
             const pagamentoObj = new Pagamentos(
                 new Date(pagamentos.data), 
                 pagamentos.statusPagamento
             );
 
-            // Criação do objeto Cliente
+           
             const clienteObj = new Cliente(
                 id,
                 genero,
@@ -21,13 +24,13 @@ class DadosController {
                 dataCancelamento ? new Date(dataCancelamento) : null
             );
 
-            // Criação do objeto Notificacoes
+            
             const notificacoesObj = new Notificacoes(
                 telefoneCliente,
                 statusConversao
             );
 
-            // Simulação de uma ação assíncrona, como salvar no banco de dados
+            
             // Por exemplo, await someService.saveData(clienteObj, notificacoesObj);
 
             res.status(200).json({
@@ -40,3 +43,5 @@ class DadosController {
         }
     }
 }
+
+export default DadosController

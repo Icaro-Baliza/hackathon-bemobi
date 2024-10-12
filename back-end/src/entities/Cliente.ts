@@ -1,3 +1,6 @@
+import { genero } from "../enums/genero"
+import Pagamentos from "./Pagamentos"
+
 class Cliente {
     id: number
     genero: genero
@@ -24,5 +27,4 @@ class Cliente {
 
 }
 
-
-
+export default Cliente
