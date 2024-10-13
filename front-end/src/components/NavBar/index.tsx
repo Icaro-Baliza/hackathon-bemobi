@@ -11,7 +11,7 @@ export default function NavBar() {
                 alt="logo da empresa"
                 height={50}
                 width={146}
-                src="/logoProvisoria.svg"
+                src="/logoOmniBi.svg"
             />
             <SearchBar/>
             <ButtonContainer>

@@ -1,10 +1,10 @@
-import Charts from '@/components/Charts';
 import { PageMain } from '@/styles/typography';
 import React from 'react'
-export default function Home() {
+import Chat from '@/components/Chat';
+export default function ChatBot() {
   return (
     <PageMain>
-      <Charts/>
+      <Chat/>
     </PageMain>
   );
 }

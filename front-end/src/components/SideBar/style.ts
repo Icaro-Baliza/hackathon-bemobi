@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Link from 'next/link'
 
 export const SideBarElement = styled.div`
-
 `
 export const SideBarOver = styled.aside`
     position: fixed;
@@ -12,6 +11,12 @@ export const SideBarOver = styled.aside`
     width: 10rem;
     border-right: 3px solid rgba(0, 0, 0, 0.05);
     background-color: white;
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 `
 
 export const StyledNav = styled.nav`

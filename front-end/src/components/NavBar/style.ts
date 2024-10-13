@@ -17,7 +17,7 @@ export const NavBarElement = styled.div`
     padding: 0 3rem;
 `
 
-export const ButtonContainer = styled.button`
+export const ButtonContainer = styled.div`
     display: flex;
     background-color: transparent;
     border: none;
